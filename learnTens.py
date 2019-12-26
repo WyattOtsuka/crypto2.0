@@ -25,6 +25,7 @@ model.compile(optimizer = "adam", loss = "sparse_categorical_crossentropy", metr
 
 model.fit(train_images, train_labels, epochs = 5)
 
+model.save('test.h5')
 
 prediction = model.predict(test_images)
 
