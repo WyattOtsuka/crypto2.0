@@ -13,6 +13,8 @@ class_names = ['T-shirt/top', 'Trouser', 'Pullover', 'Dress', 'Coat',
 train_images = train_images/255.0
 test_images = test_images/255.0
 
+print(type(train_images))
+
 model = keras.Sequential([
     keras.layers.Flatten(input_shape = (28, 28)),
     keras.layers.Dense(128, activation = "relu"),
